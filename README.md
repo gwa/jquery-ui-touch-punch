@@ -1,4 +1,7 @@
 # jQuery UI Touch Punch
+
+** This is an AMD compatible fork of the original at https://github.com/furf/jquery-ui-touch-punch/ **
+
 ## Touch Event Support for jQuery UI
 
 > **jQuery UI Touch Punch is a small hack that enables the use of touch events on sites using the jQuery UI user interface library.**
