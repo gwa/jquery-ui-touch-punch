@@ -1,5 +1,9 @@
 {
   "name": "jquery-ui-touch-punch",
-  "version": "0.1.0",
+  "ignore": [
+  	".gitignore",
+  	"Gruntfile.js",
+  	"package.json"
+  ],
   "main": ["jquery.ui.touch-punch.js"]
 }

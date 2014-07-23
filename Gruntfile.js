@@ -1,18 +1,17 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        lint: {
-            files: ['grunt.js', 'jquery.ui.touch-punch.js']
-        },
+
         jshint: {
             options: {
                 immed: false,
                 latedef: false,
                 browser: true,
                 eqeqeq: false
-            }
+            },
+            files: ['jquery.ui.touch-punch.js']
         },
 
-        min: {
+        uglify: {
             dist : {
                 src : ["jquery.ui.touch-punch.js"],
                 dest : "jquery.ui.touch-punch.min.js"
@@ -20,5 +19,8 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', 'lint min');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+
+    grunt.registerTask('default', ['jshint', 'uglify']);
 };
